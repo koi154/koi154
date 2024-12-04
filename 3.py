@@ -149,7 +149,6 @@ elif user == '2' or user == '주인': #주인 선택
         if delete_drink in vending_machine:
             print("남은 음료수:", vending_machine)
             vending_machine.remove(delete_drink)
-            vending_machine.sort()
             print(f"삭제완료.")
         else:
             print(f"{delete_drink}는 지금 없네요.")
