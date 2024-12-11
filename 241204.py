@@ -122,33 +122,37 @@
 # for i in dict:
 #     print(f"{i} : {dict[i]}", end = " ")
 
-d = [
-    [10,20],
-    [30,40],
-    [50,60]
-]
+# d = [
+#     [10,20],
+#     [30,40],
+#     [50,60]
+# ]
+# d = [
+#     [10,20],
+#     [30,40],
+#     [50,60]
+# ]
+# print(d)
+# print(d[0][0]) #10 
+# print(d[0][1]) #20 
+# print(d[1][0]) #30
+# print(d[1][1]) #40 
+# print(d[2][0]) #50 
+# print(d[2][1]) #60
+# d.append([70,80])
+# print(d)
+# d[0][0] = 90
+# print(d)
 
-print(d)
-print(d[0][0]) #10 
-print(d[0][1]) #20 
-print(d[1][0]) #30
-print(d[1][1]) #40 
-print(d[2][0]) #50 
-print(d[2][1]) #60
-d.append([70,80])
-print(d)
-d[0][0] = 90
-print(d)
+# #del(d[1][1])
+# print(d)
+# print(len(d))
+# print(len(d[0]))
 
-#del(d[1][1])
-print(d)
-print(len(d))
-print(len(d[0]))
+# for i in range(0,len(d)):
+#     for j in range(0,len(d[i])):
+#         print(d[i][j], end=" ")
+#     print()
 
-for i in range(0,len(d)):
-    for j in range(0,len(d[i])):
-        print(d[i][j], end=" ")
-    print()
-
-    for x,y in d:
-        print(x,y)
+#     for x,y in d:
+#         print(x,y)

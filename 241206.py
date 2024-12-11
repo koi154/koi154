@@ -152,8 +152,3 @@
 # Value = list(filter(lambda x : x >= 3, map(lambda x : 2 * x, l1 )))
 # print(Value)
 
-def solution(arr):
-    if arr >= 50:
-        arr // 2
-    answer = []
-    return answer

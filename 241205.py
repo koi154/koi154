@@ -372,14 +372,22 @@
 
 #실습5 #global 빼기
 
-def get_times(n):
+# def get_times(n):
    
-    for i in range(1,31):
-        if i % n == 0:
-            print(i, end=" ")
-            count += 1
+#     for i in range(1,31):
+#         if i % n == 0:
+#             print(i, end=" ")
+#             count += 1
 
-n = 3
-count = 0
-get_times(n)
-print(f'\n{n}의 배수의 개수: {count}')
+# n = 3
+# count = 0
+# get_times(n)
+# print(f'\n{n}의 배수의 개수: {count}')
+
+def pr_str(txt, count=1):
+    for i in range(count):
+        print(txt)
+
+pr_str("Hello", 3)
+print()
+pr_str("Hello")
