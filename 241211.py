@@ -84,12 +84,12 @@ import time
 # f3.write("Hello world22\n")
 # f3.close()
 
-f2 = open("test.txt")
-print(f2.read()) 
-f2.close()
+# f2 = open("test.txt")
+# print(f2.read()) 
+# f2.close()
 
-f3 = open("test.txt")
-print(f3.readline(), end="") #readline: 한 줄씩 읽어옴.
-print(f3.readline(), end="")
-print(f3.readline(), end="")
-f3.close()
+# f3 = open("test.txt")
+# print(f3.readline(), end="") #readline: 한 줄씩 읽어옴.
+# print(f3.readline(), end="")
+# print(f3.readline(), end="")
+# f3.close()
