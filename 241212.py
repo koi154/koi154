@@ -264,40 +264,83 @@
 
 
 # dict을 사용한 실습2
-import os
-dictUser = {}
+# import os
+# dictUser = {}
 
-with open("member.txt", 'r') as f:
-    for line in f: #파일의 각 줄 읽음
-        n, p = line.split() # n,p로 분리
-        dictUser[n] = p # 이름이 키, 비번이 값
+# with open("member.txt", 'r') as f:
+#     for line in f: #파일의 각 줄 읽음
+#         n, p = line.split() # n,p로 분리
+#         dictUser[n] = p # 이름이 키, 비번이 값
 
-name = input("이름을 입력하세요: ")
-pw = input("비밀번호를 입력하세요: ")
+# name = input("이름을 입력하세요: ")
+# pw = input("비밀번호를 입력하세요: ")
 
-if pw == dictUser.get(name): #입력한 비번이 저장된 비번가 일치확인 get(name) : 값(비번)
-    print("로그인 성공!")
-    tel = input("전화번호를 입력하ㅔ요: ") #전화번호 입력
-    tel_dict = {} #전화번호 딕셔너리 생성
+# if pw == dictUser.get(name): #입력한 비번이 저장된 비번가 일치확인 get(name) : 값(비번)
+#     print("로그인 성공!")
+#     tel = input("전화번호를 입력하ㅔ요: ") #전화번호 입력
+#     tel_dict = {} #전화번호 딕셔너리 생성
 
     
-    if os.path.exists("member_tel.txt"): #member_tel.txt 파일 있으면
-        with open("member_tel.txt", 'r') as f:
-            for line in f: #파일 각 줄 읽음
-                n, t = line.split() # 이름(n)과 전화번호 (t) 분리
-                tel_dict[n] = t # 이름이 키, 전화번호 값을 딕셔ㅓ리로 저장
+#     if os.path.exists("member_tel.txt"): #member_tel.txt 파일 있으면
+#         with open("member_tel.txt", 'r') as f:
+#             for line in f: #파일 각 줄 읽음
+#                 n, t = line.split() # 이름(n)과 전화번호 (t) 분리
+#                 tel_dict[n] = t # 이름이 키, 전화번호 값을 딕셔ㅓ리로 저장
     
-    is_new = name not in tel_dict #tel_dict에 이름 없으면 True
-    tel_dict[name] = tel # 전화번호 저장/수정
+#     is_new = name not in tel_dict #tel_dict에 이름 없으면 True
+#     tel_dict[name] = tel # 전화번호 저장/수정
     
-    with open("member_tel.txt", 'w') as f:
-        for n, t in tel_dict.items(): #딕셔너리의 모든 항목을
-            f.write(f"{n} {t}\n")  # 파일에 저장
+#     with open("member_tel.txt", 'w') as f:
+#         for n, t in tel_dict.items(): #딕셔너리의 모든 항목을
+#             f.write(f"{n} {t}\n")  # 파일에 저장
     
-    # 결과 출력
-    if is_new:
-        print("전화번호를 추가했습니다.")
-    else:
-        print("전화번호를 수정했습니다.")
-else:
-    print("로그인 실패!")
+#     # 결과 출력
+#     if is_new:
+#         print("전화번호를 추가했습니다.")
+#     else:
+#         print("전화번호를 수정했습니다.")
+# else:
+#     print("로그인 실패!")
+
+# 실습 3
+
+# import sys
+
+# def successLogin(name, pw):
+#     dictUser = {}
+#     with open("member.txt", 'r') as f:
+#         for line in f:
+#             n, p = line.split()
+#             dictUser[n] = p
+
+#     print(dictUser)
+
+#     return pw == dictUser.get(name)
+    
+# name = input("이름을 입력하세요: ")
+# pw = input("비밀번호를 입력하세요: ")
+    
+# if not successLogin(name, pw):
+#     print("로그인 실패")
+#     sys.exit(0)
+
+# print("로그인 성공")
+# phone = input("전화번호를 입력하세요.: ")
+
+# with open("member_tel.txt", "r") as f:
+#     m_tel_list = f.readlines()
+#     print(m_tel_list)
+
+# user_tel = name + " " + phone + "\n"
+
+# with open("member_tel.txt", "w") as f:
+#     write = False
+#     for i in m_tel_list:
+#         if i.split()[0] == name:
+#             f.write(user_tel)
+#             write = True
+#         else :
+#             f.write(i)
+#     if not write:
+#         print("not write", user_tel)
+#         f.write(user_tel)
