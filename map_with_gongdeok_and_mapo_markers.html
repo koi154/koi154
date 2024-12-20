@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a7f73c985ef7501d070d8dff26b7ee7b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a7f73c985ef7501d070d8dff26b7ee7b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a7f73c985ef7501d070d8dff26b7ee7b = L.map(
+                "map_a7f73c985ef7501d070d8dff26b7ee7b",
+                {
+                    center: [37.541, 126.948],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9207f2d63a908a429d205d14ce2cd561 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9207f2d63a908a429d205d14ce2cd561.addTo(map_a7f73c985ef7501d070d8dff26b7ee7b);
+        
+    
+            var marker_a20498dd5a4ee57f205de2e1636ca251 = L.marker(
+                [37.54392611998678, 126.95105440539045],
+                {
+}
+            ).addTo(map_a7f73c985ef7501d070d8dff26b7ee7b);
+        
+    
+            var icon_0fb7e276f48cb45ae8f1a021410a962b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a20498dd5a4ee57f205de2e1636ca251.setIcon(icon_0fb7e276f48cb45ae8f1a021410a962b);
+        
+    
+        var popup_0dad487b67e40cdcf974f5820aa16a24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_413920bae8ac19f0d63373810f0ce4f1 = $(`<div id="html_413920bae8ac19f0d63373810f0ce4f1" style="width: 100.0%; height: 100.0%;">subway</div>`)[0];
+                popup_0dad487b67e40cdcf974f5820aa16a24.setContent(html_413920bae8ac19f0d63373810f0ce4f1);
+            
+        
+
+        marker_a20498dd5a4ee57f205de2e1636ca251.bindPopup(popup_0dad487b67e40cdcf974f5820aa16a24)
+        ;
+
+        
+    
+    
+            var marker_f0ca5e33e4c3765e73cfbbf54d1140ad = L.marker(
+                [37.53959008903884, 126.94590610865076],
+                {
+}
+            ).addTo(map_a7f73c985ef7501d070d8dff26b7ee7b);
+        
+    
+            var icon_9c5f583e0c031fd3076fbdc123e2a382 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "fa-train-subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f0ca5e33e4c3765e73cfbbf54d1140ad.setIcon(icon_9c5f583e0c031fd3076fbdc123e2a382);
+        
+    
+        var popup_7bc127494847d3f2b2d82476043f9a00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2293e08bf6d0f6a88fecb356d9cf4780 = $(`<div id="html_2293e08bf6d0f6a88fecb356d9cf4780" style="width: 100.0%; height: 100.0%;">subway</div>`)[0];
+                popup_7bc127494847d3f2b2d82476043f9a00.setContent(html_2293e08bf6d0f6a88fecb356d9cf4780);
+            
+        
+
+        marker_f0ca5e33e4c3765e73cfbbf54d1140ad.bindPopup(popup_7bc127494847d3f2b2d82476043f9a00)
+        ;
+
+        
+    
+    
+            marker_f0ca5e33e4c3765e73cfbbf54d1140ad.bindTooltip(
+                `<div>
+                     마포역
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
